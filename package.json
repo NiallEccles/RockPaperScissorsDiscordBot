@@ -1,0 +1,25 @@
+{
+  "name": "RockPaperScissorsDiscordBot",
+  "version": "1.0.0",
+  "description": "A rock paper scissors Discord bot.",
+  "main": "./src/bot.js",
+  "scripts": {
+    "start": "node ./src/bot.js",
+    "dev": "nodemon ./src/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiallEccles/RockPaperScissorsDiscordBot.git"
+  },
+  "keywords": [],
+  "author": "Niall Eccles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiallEccles/RockPaperScissorsDiscordBot/issues"
+  },
+  "homepage": "https://github.com/NiallEccles/RockPaperScissorsDiscordBot#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0"
+  }
+}

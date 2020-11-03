@@ -15,8 +15,8 @@ client.on("message", (message) => {
   if (message.content.substring(0, 3) === "rps") {
     let userInput = message.content.split(" ")[1].toLowerCase();
     let options = ["rock", "paper", "scissors"];
-    let randomNumber = Math.floor(Math.random() * options.length) + 1;
-    let botInput = options[randomNumber - 1];
+    let randomNumber = Math.floor(Math.random() * options.length);
+    let botInput = options[randomNumber];
     let map = {};
 
     function sendMessage(botVerdict) {

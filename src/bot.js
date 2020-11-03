@@ -7,10 +7,11 @@ const client = new Client();
 client.login(process.env.DISCORDJS_BOT_TOKEN);
 
 client.on("ready", () => {
-//   console.log(`${client.user.username}`);
+  //   console.log(`${client.user.username}`);
 });
 
 client.on("message", (message) => {
+  if (message.author.bot) return;
   if (message.content.substring(0, 3) === "rps") {
     let userInput = message.content.split(" ")[1].toLowerCase();
     let options = ["rock", "paper", "scissors"];
